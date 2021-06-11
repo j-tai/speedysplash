@@ -9,13 +9,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(SplashScreen.class)
 public class SplashScreenMixin {
-    @Shadow private long applyCompleteTime;
+    @Shadow private long reloadCompleteTime;
 
     @Inject(method = "render", at = @At("HEAD"))
     private void onRender(CallbackInfo info) {
         // Disable the fade-out animation of the Mojang logo
-        if (applyCompleteTime >= 0) {
-            applyCompleteTime = 0;
+        if (reloadCompleteTime >= 0) {
+            reloadCompleteTime = 0;
         }
     }
 }
