@@ -2,18 +2,22 @@
   "schemaVersion": 1,
   "id": "speedysplash",
   "version": "${version}",
-  "name": "Speedysplash",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "name": "Speedy Splash",
+  "description": "Skip the splash screen fadeout animation",
+  "authors": [
+    "j-tai"
+  ],
+  "contact": {
+    "homepage": "https://github.com/j-tai/speedysplash",
+    "issues": "https://github.com/j-tai/speedysplash/issues",
+    "sources": "https://github.com/j-tai/speedysplash"
+  },
   "license": "MIT",
-  "icon": "assets/speedysplash/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
       "ca.jtai.speedysplash.SpeedySplashClient"
-    ],
-    "main": []
+    ]
   },
   "mixins": [
     "speedysplash.mixins.json"
