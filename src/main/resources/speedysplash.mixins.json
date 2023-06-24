@@ -4,10 +4,10 @@
   "package": "ca.jtai.speedysplash.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MinecraftClientMixin",
-    "SplashScreenMixin"
   ],
   "client": [
+    "SplashScreenMixin",
+    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
